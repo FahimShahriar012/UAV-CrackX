@@ -40,7 +40,9 @@ The full 60-epoch log is in [`artifacts/training_metrics.json`](artifacts/traini
 
 The dataset has three scale folders: `UAV-CrackX4`, `UAV-CrackX8`, and `UAV-CrackX16`. Each scale contains 400 labeled training images and masks, plus 100 unlabeled benchmark images. Images and masks are 672 x 378 pixels. The 300 benchmark images have no public ground-truth masks in the provided dataset copy.
 
-The dataset is not included in this repository. Obtain it from the authorized dataset or competition source, review its license and citation requirements, then point `--data-root` to the extracted `UAV-CrackX` directory. Expected layout:
+The dataset provided for this project is included under [`dataset/UAV-CrackX/`](dataset/UAV-CrackX/), with the source dataset description and citation information in [`dataset/README.md`](dataset/README.md) and its referenced figures in `dataset/resources/`. It contains 2,700 files across the labeled training and benchmark input splits. Dataset citation and usage terms belong to the dataset authors; the provided source README does not specify a separate license. Review the source terms before reuse or redistribution. The repository's software license does not apply to the dataset.
+
+Point `--data-root` to the included `dataset/UAV-CrackX` directory. Expected layout:
 
 ```text
 UAV-CrackX/
